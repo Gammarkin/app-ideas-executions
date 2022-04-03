@@ -1,9 +1,7 @@
 const floatingInput = document.getElementById("floatingInput");
 const display = document.getElementById("display");
 
-const convertBinaryToDecimal = () => {
-  return parseInt(floatingInput.value, 2);
-};
+const convertBinaryToDecimal = () => parseInt(floatingInput.value, 2);
 
 const checkAndDisplay = (fun) => {
   floatValue = floatingInput.value;
