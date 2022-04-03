@@ -1,6 +1,6 @@
 # app-ideas-executions
 ---
-## This is a repository wich contains my executions of the repository <a href="https://github.com/florinpop17/app-ideas" alt="app-ideas repo link"> app-ideias </a> by: florinpop17.
+## This is a repository wich contains my executions of the app ideias of the repository <a href="https://github.com/florinpop17/app-ideas" alt="app-ideas repo link"> app-ideias </a> by: florinpop17.
 ---
 
 ## Projects:
