@@ -10,8 +10,8 @@ body {
 }
 
 #calculator {
-  width: 320px;
-  height: 520px;
+  width: 32%;
+  height: 100%;
   background-color: #1f2020;
   margin: 0 auto;
   top: 20px;
@@ -141,6 +141,7 @@ button:nth-child(20) {
   color: rgb(231, 231, 231);
 }
 
-a {
-  text-align: center;
+footer {
+  display: flex;
+  justify-content: center;
 }
