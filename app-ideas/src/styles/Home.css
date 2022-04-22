@@ -1,0 +1,44 @@
+.homeTierOne {
+  align-items: center;
+  color: rgb(85, 74, 74);
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  justify-content: center;
+  height: 28.3vh;
+  background-color: rgb(192, 238, 148);
+}
+
+.homeTierTwo {
+  align-items: center;
+  color: rgb(36, 33, 33);
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  justify-content: center;
+  height: 28.3vh;
+  background-color: rgb(247, 183, 65);
+}
+
+.homeTierThree {
+  align-items: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  justify-content: center;
+  height: 28.4vh;
+  background-color: rgb(240, 74, 33);
+}
+
+.homeTierOne:hover {
+  background-color: rgb(165, 228, 107);
+}
+
+.homeTierTwo:hover {
+  background-color: rgb(245, 163, 11);
+}
+
+.homeTierThree:hover {
+  background-color: rgb(192, 17, 17);
+}

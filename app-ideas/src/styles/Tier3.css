@@ -1,0 +1,15 @@
+.divTier3 {
+    background-color: var(--bg-color-primary);
+    height: 100vh;
+}
+
+.Tier3List {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2Tier3 {
+    color: white;
+}

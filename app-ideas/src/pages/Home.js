@@ -1,20 +1,21 @@
 import React, { Component } from 'react'
-import styles from './Home.modules.css'
 import { Link } from 'react-router-dom'
+import Header from '../components/Header'
+import '../styles/Home.css'
 
 export default class Home extends Component {
   render() {
     return (
-      <div className={styles.a} >
-          <h1>Executions - tiers</h1>
+      <div className=''>
+        <Header text="Executions - tiers" />
           <Link to='/tier1'>
-              <div className={styles.b}>Tier One - Begginer</div>
+              <div className="homeTierOne">Tier One - Begginer</div>
           </Link>
           <Link to='/tier2'>
-              <div className={styles.a}>Tier Two - Intermediate</div>
+              <div className="homeTierTwo">Tier Two - Intermediate</div>
           </Link>
           <Link to='/tier3'>
-          <div className={styles.b}>Tier Three - Advanced</div>
+          <div className="homeTierThree">Tier Three - Advanced</div>
           </Link>
       </div>
     )

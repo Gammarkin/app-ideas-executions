@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/Footer.css';
 
 export default class Footer extends Component {
   render() {
     return (
-      <div>
-        <h1>Footer</h1>
+      <div className='divFooter'>
           <Link to='/'>
-            <p>Back to Home</p>
+            <p className='pFooter'>Back to Home</p>
           </Link>
       </div>
     )

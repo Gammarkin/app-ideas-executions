@@ -1,0 +1,25 @@
+.divTier1 {
+  background-color: var(--bg-color-primary);
+  height: 100vh;
+}
+
+.Tier1List {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.h2Tier1 {
+  color: rgb(255, 160, 35);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.h2Tier1:hover {
+  color: rgb(221, 170, 103);
+}
+
+.h2Tier1:active {
+  color: rgb(255, 145, 0);
+}

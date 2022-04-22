@@ -1,0 +1,43 @@
+.divBin {
+    background-color: var(--bg-color-primary);
+    height: 100vh;
+}
+
+.Bin2dec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelBin2dec {
+    color: white;
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.inputBin {
+    margin: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--bg-color-primary);
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.resultBin {
+    color: white;
+    font-size: 2rem;
+}
+
+.btnBin {
+    background-color: rgb(212, 88, 57);
+    margin: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--bg-color-primary);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

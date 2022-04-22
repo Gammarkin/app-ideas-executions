@@ -1,0 +1,15 @@
+.divTier2 {
+    background-color: var(--bg-color-primary);
+    height:100vh;
+}
+
+.Tier2List{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.h1Tier2 {
+    color: white;
+}
