@@ -15,7 +15,7 @@ export default class Tier1 extends Component {
             </Link>
             <Link to="/borderRadious">
               <h2 className='h2Tier1'>
-                2 - Border Radious converter: Preview how CSS3 border-radius values affect an element
+                2 - Border Radius converter: Preview how CSS3 border-radius values affect an element
             	</h2>
             </Link>
           </div>

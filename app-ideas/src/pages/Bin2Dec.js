@@ -32,7 +32,7 @@ export default class Bin2Dec extends Component {
       const { input, result, err } = this.state
     return (
       <div className='divBin'>
-          <Header text="Bin2Dec" />
+          <Header text="Bin2Dec" show={true}/>
           <div className='Bin2dec'>
               <label className='labelBin2dec' htmlFor='input'>
                   Your binnary here:

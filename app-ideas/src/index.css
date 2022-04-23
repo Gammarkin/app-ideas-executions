@@ -44,5 +44,5 @@ input[type=number]::-webkit-outer-spin-button {
   --color-primary: #dee8ec;
   --color-secondary: #e6dada;
   --bg-color-primary: #201f1f;
-  --main-font-color: rgb(204, 56, 30);
+  --main-font-color: crimson;
 }
