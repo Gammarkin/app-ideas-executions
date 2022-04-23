@@ -24,7 +24,7 @@ export default class Bin2Dec extends Component {
              const result = parseInt(input, 2)
         this.setState({result})
         } else {
-            this.setState({err: "error. Only 1's and 0's are permitted"})
+            this.setState({err: "error. Only 1's and 0's are permitted", result: undefined})
         }
     }
 

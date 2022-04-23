@@ -4,6 +4,7 @@ import Tier2 from './pages/Tier2';
 import Tier3 from './pages/Tier3';
 import Home from './pages/Home';
 import Bin2Dec from './pages/Bin2Dec.js';
+import BorderRadious from './pages/BorderRadious';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route exact path="/tier2" component={Tier2} />
       <Route exact path="/tier3" component={Tier3} />
       <Route exact path="/bin2dec" component={Bin2Dec} />
+      <Route exact path="/borderRadious" component={BorderRadious} />
     </div>
   );
 }

@@ -8,12 +8,14 @@
   display: flex;
   list-style: none;
   justify-content: center;
+  flex-direction: column;
 }
 
 .h2Tier1 {
   color: rgb(255, 160, 35);
   font-size: 2rem;
   font-weight: bold;
+  margin: 10px;
 }
 
 .h2Tier1:hover {
