@@ -5,6 +5,7 @@ import Tier3 from './pages/Tier3';
 import Home from './pages/Home';
 import Bin2Dec from './pages/Bin2Dec.js';
 import BorderRadius from './pages/BorderRadius';
+import Calculator from './pages/Calculator';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route exact path="/tier3" component={Tier3} />
       <Route exact path="/bin2dec" component={Bin2Dec} />
       <Route exact path="/borderRadious" component={BorderRadius} />
+      <Route exact path="/calculator" component={Calculator} />
     </div>
   );
 }
