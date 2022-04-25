@@ -1,0 +1,80 @@
+.divBorder {
+  background-color: var(--bg-color-primary);
+  height: 100vh;
+}
+
+.inputBorder {
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 10px;
+  width: 200px;
+}
+
+.borderRadious {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.labelBorder {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.labelsBorder {
+  width: 675px;
+}
+
+.divBorderMessage {
+  display: flex;
+  padding: 0;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.borderExample {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 0.5rem;
+  width: 300px;
+  height: 300px;
+}
+
+.message {
+  width: 300px;
+  height: 300px;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.button {
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: 200px;
+  background-color: rgb(230, 188, 112);
+}
+
+.button:hover {
+  background-color: rgb(235, 188, 129);
+  color: rgb(0, 0, 0);
+}
+
+.button:active {
+  background-color: rgb(158, 126, 74);
+  color: rgb(117, 94, 50);
+}
+
+.borderEx {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 0.5rem;
+  width: 300px;
+  height: 300px;
+  margin-left: 30px;
+}
