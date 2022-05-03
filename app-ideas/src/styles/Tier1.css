@@ -4,24 +4,23 @@
 }
 
 .Tier1List {
-  align-items: center;
   display: flex;
   list-style: none;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 }
 
 .h2Tier1 {
-  color: rgb(255, 160, 35);
+  color: rgb(233, 228, 222);
   font-size: 2rem;
   font-weight: bold;
   margin: 10px;
 }
 
 .h2Tier1:hover {
-  color: rgb(221, 170, 103);
+  color: rgb(255, 255, 255);
 }
 
 .h2Tier1:active {
-  color: rgb(255, 145, 0);
+  color: rgb(99, 96, 91);
 }

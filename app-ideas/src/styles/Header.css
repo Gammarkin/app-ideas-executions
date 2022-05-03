@@ -27,6 +27,10 @@
   cursor: pointer;
 }
 
+.ulHeader li:hover {
+  color: white;
+}
+
 .h1Header {
   color: rgb(255, 255, 255);
 }
