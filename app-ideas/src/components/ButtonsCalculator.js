@@ -2,11 +2,16 @@ import React, {Component} from 'react';
 
 export default class ButtonsCalculator extends Component {
   render() {
-    const {display, handleErase, handleChangeDisplay} = this.props;
+    const {display, handleErase, handleChangeDisplay, handleInput} = this.props;
     return (
       <div className="calculatorButtons">
         <div className="display">
-          <span className="display-text">{display}</span>
+          <input
+            type="number"
+            onChange={handleInput}
+            value={display}
+            className="display-text"
+          />
           <button onClick={handleErase} className="operatorCE">
             CE
           </button>

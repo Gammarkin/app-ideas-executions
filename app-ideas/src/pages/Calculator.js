@@ -16,6 +16,11 @@ export default class Calculator extends Component {
     };
   }
 
+  handleInput = ({target}) => {
+    const {value} = target;
+    this.setState({display: value});
+  };
+
   handleChangeDisplay = ({target}) => {
     const allNumbers = document.getElementsByClassName('number');
     const arr = [...allNumbers].map((number) => number.innerText);
@@ -27,6 +32,8 @@ export default class Calculator extends Component {
       prevOperand: prev.currOperand,
     }));
   };
+
+  handleOperators = ({target}) => {};
 
   handleErase = ({target}) => {
     const {innerText} = target;
@@ -55,6 +62,7 @@ export default class Calculator extends Component {
         <Header text="Calculator" show={true} />
         <div className="divCalculator">
           <ButtonsCalculator
+            handleInput={this.handleInput}
             handleChangeDisplay={this.handleChangeDisplay}
             handleErase={this.handleErase}
             display={display}
