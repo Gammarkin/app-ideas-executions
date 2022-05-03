@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/BorderRadius.css';
@@ -20,31 +20,31 @@ export default class BorderRadius extends Component {
     this.handleWrite();
   }
 
-  handleInput = ({ target }) => {
-    const { value, name } = target;
-    this.setState({ [name]: value });
+  handleInput = ({target}) => {
+    const {value, name} = target;
+    this.setState({[name]: value});
   };
 
   handleConvertBorder = () => {
-    const { input1, input2, input3, input4 } = this.state;
+    const {input1, input2, input3, input4} = this.state;
     const example = document.querySelector('.borderExample');
 
     example.style.borderRadius = `${input1} ${input2} ${input3} ${input4}`;
   };
 
   handleWrite = () => {
-    const { input1, input2, input3, input4 } = this.state;
+    const {input1, input2, input3, input4} = this.state;
     const message = document.querySelector('.message');
 
     message.innerText = `${input1} ${input2} ${input3} ${input4}`;
   };
 
   render() {
-    const { input1, input2, input3, input4 } = this.state;
+    const {input1, input2, input3, input4} = this.state;
     const textToCopy = `border-radius: ${input1} ${input2} ${input3} ${input4};`;
     return (
       <div className="divBorder">
-        <Header text="Border Radious Converter" show={true} />
+        <Header text="Border Radius Converter" show={true} />
         <div className="borderRadious">
           <div className="labelsBorder">
             <label className="labelBorder" htmlFor="input1">

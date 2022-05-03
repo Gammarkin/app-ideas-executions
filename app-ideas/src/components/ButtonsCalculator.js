@@ -5,7 +5,7 @@ export default class ButtonsCalculator extends Component {
     return (
       <div className="calculatorButtons">
         <div className="display">
-          <span className="display-text">0</span>
+          <span className="display-text" />
           <button className="operatorCE">CE</button>
         </div>
         <div className="buttonsCalc">
