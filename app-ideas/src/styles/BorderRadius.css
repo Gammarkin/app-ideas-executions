@@ -4,12 +4,13 @@
 }
 
 .inputBorder {
-  border: none;
-  border-radius: 25px;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  margin: 10px;
-  width: 200px;
+  width: 90px;
+  height: 35px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
 }
 
 .borderRadious {
@@ -38,10 +39,15 @@
 }
 
 .borderExample {
-  border: 1px solid rgb(255, 255, 255);
-  padding: 0.5rem;
-  width: 300px;
+  border: 3px solid rgb(255, 255, 255);
+  padding: 10px;
+  margin: 10px;
   height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .message {
@@ -53,16 +59,18 @@
 }
 
 .button {
-  border: none;
-  border-radius: 25px;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  width: 200px;
-  background-color: rgb(230, 188, 112);
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 15px;
+  background-color: rgb(26, 26, 26);
+  color: rgb(255, 255, 255);
 }
 
 .button:hover {
-  background-color: rgb(235, 188, 129);
+  background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
 
@@ -72,6 +80,7 @@
 }
 
 .borderEx {
+  display: flex;
   border: 1px solid rgb(255, 255, 255);
   padding: 0.5rem;
   width: 300px;
