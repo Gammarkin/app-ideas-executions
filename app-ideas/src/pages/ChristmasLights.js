@@ -9,8 +9,20 @@ export default class ChristmasLights extends Component {
     this.state = {
       intervalID: '',
       disabled: false,
+      inputValue: 0,
+      clicked: false,
+      msg: 'ON',
+      classs: 'xmasOn',
     };
   }
+
+  handleInput = ({target}) => {
+    if (!target.value) {
+      this.setState({disabled: true});
+    } else {
+      this.setState({inputValue: target.value, disabled: false});
+    }
+  };
 
   handleChangeLights = () => {
     const firstBall = document.querySelectorAll('.firstBall');
@@ -32,47 +44,50 @@ export default class ChristmasLights extends Component {
   };
 
   handleButton = () => {
-    const intervalID = window.setInterval(this.handleChangeLights, 120);
-    this.setState({intervalID, disabled: true});
-    this.handleChangeBtnMessage();
+    const {inputValue, clicked} = this.state;
+    if (clicked) {
+      this.handleStop();
+      this.setState({clicked: false, msg: 'ON', classs: 'xmasOn'});
+    } else {
+      const intervalID = window.setInterval(
+        this.handleChangeLights,
+        inputValue
+      );
+      this.setState({intervalID, clicked: true, msg: 'OFF', classs: 'xmasOff'});
+      this.handleChangeBtnMessage();
+    }
   };
 
   handleStop = () => {
     const {intervalID} = this.state;
 
     clearInterval(intervalID);
-    this.setState({disabled: false});
   };
 
   render() {
-    const {disabled} = this.state;
+    const {disabled, inputValue, msg, classs} = this.state;
     return (
       <div>
         <Header text="Christmas Lights" show={true} />
         <div className="xmasDiv">
           <section className="xmasBalls">
-            <div className="firstBall"></div>
-            <div className="secondBall"></div>
-            <div className="firstBall"></div>
-            <div className="secondBall"></div>
-            <div className="firstBall"></div>
-            <div className="secondBall"></div>
+            <div className="firstBall" />
+            <div className="secondBall" />
+            <div className="firstBall" />
+            <div className="secondBall" />
+            <div className="firstBall" />
+            <div className="secondBall" />
           </section>
+          <p className="xmasP">Type the interval in miliseconds</p>
+          <input type="number" onChange={this.handleInput} value={inputValue} />
           <div className="flex">
             <button
-              className={`switchBtn xmasOn`}
+              className={`switchBtn ${classs}`}
               type="button"
               onClick={this.handleButton}
               disabled={disabled}
             >
-              {`turn ON the lights.`}
-            </button>
-            <button
-              disabled={!disabled}
-              className="switchBtn xmasOff"
-              onClick={this.handleStop}
-            >
-              turn OFF the lights
+              {`turn ${msg} the lights.`}
             </button>
           </div>
         </div>
