@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Bin2Dec from './pages/Bin2Dec.js';
 import BorderRadius from './pages/BorderRadius';
 import Calculator from './pages/Calculator';
+import ChristmasLights from './pages/ChristmasLights';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route exact path="/bin2dec" component={Bin2Dec} />
       <Route exact path="/borderRadious" component={BorderRadius} />
       <Route exact path="/calculator" component={Calculator} />
+      <Route exact path="/xmas-lights" component={ChristmasLights} />
     </div>
   );
 }

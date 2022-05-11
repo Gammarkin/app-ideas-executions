@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import '../styles/Tier1.css';
 
 export default class Tier1 extends Component {
@@ -23,6 +23,11 @@ export default class Tier1 extends Component {
           </Link>
           <Link to="/calculator">
             <h2 className="h2Tier1">3 - Calculator</h2>
+          </Link>
+          <Link to="/xmas-lights">
+            <h2 className="h2Tier1">
+              4 - Christmas Lights: Simulate a string of Christmas lights
+            </h2>
           </Link>
         </div>
         <Footer />

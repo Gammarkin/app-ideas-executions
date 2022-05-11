@@ -1,0 +1,68 @@
+.xmasDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.labelXmas {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.xmasBalls {
+  display: flex;
+  flex-direction: row;
+}
+
+.switchBtn {
+  height: 50px;
+  background-color: #f3f1f1;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.switchBtn:disabled {
+  background-color: #585656;
+  color: rgb(0, 0, 0);
+}
+
+.xmasOn {
+  color: rgb(0, 0, 0);
+  background-color: rgb(245, 241, 233);
+}
+
+.xmasOff {
+  color: #0f0;
+  background-color: black;
+}
+
+.xmasInput {
+  background-color: #f3f1f1;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.firstBall {
+  width: 50px;
+  height: 50px;
+  background-color: #f00;
+  border-radius: 50%;
+}
+
+.secondBall {
+  width: 50px;
+  height: 50px;
+  background-color: #0f0;
+  border-radius: 50%;
+}
