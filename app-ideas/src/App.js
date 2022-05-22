@@ -7,6 +7,7 @@ import Bin2Dec from './pages/Bin2Dec.js';
 import BorderRadius from './pages/BorderRadius';
 import Calculator from './pages/Calculator';
 import ChristmasLights from './pages/ChristmasLights';
+import CauseEffect from './pages/CauseEffect';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route exact path="/borderRadious" component={BorderRadius} />
       <Route exact path="/calculator" component={Calculator} />
       <Route exact path="/xmas-lights" component={ChristmasLights} />
+      <Route exact path="/cause-effect" component={CauseEffect} />
     </div>
   );
 }

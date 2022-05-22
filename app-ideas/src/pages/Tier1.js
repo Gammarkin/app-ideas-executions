@@ -29,6 +29,11 @@ export default class Tier1 extends Component {
               4 - Christmas Lights: Simulate a string of Christmas lights
             </h2>
           </Link>
+          <Link to="/cause-effect">
+            <h2 className="h2Tier1">
+              5 - Cause Effect: Click list item to display item details
+            </h2>
+          </Link>
         </div>
         <Footer />
       </div>
