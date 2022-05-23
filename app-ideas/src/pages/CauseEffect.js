@@ -5,7 +5,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import {v4 as uuidv4} from 'uuid';
 import {sendNewPerson, sendNewPersonToObjPerson} from '../actions';
-import {Button} from '@mantine/core';
+import {Button, Group, Text, Center} from '@mantine/core';
+import '../styles/CauseEffect.css';
 
 const fakeStarterPerson = {
   id: 0,
@@ -58,16 +59,30 @@ class CauseEffect extends Component {
       <div>
         <Header text="Cause Effect" show={true} />
         <div>
-          {persons.map((person) => (
-            <Link
-              onClick={() => this.handleDispatchPerson(person.name)}
-              key={uuidv4()}
-              to={`/cause-effect/especifics/${person.id}`}
+          <Center>
+            <Group>
+              {persons.map((person) => (
+                <Link
+                  className="colorWhite"
+                  onClick={() => this.handleDispatchPerson(person.name)}
+                  key={uuidv4()}
+                  to={`/cause-effect/especifics/${person.id}`}
+                >
+                  <Text className="textCauseEffect" lineClamp={4}>
+                    {person.name}
+                  </Text>
+                </Link>
+              ))}
+            </Group>
+          </Center>
+          <Center>
+            <Button
+              className="buttonCauseEffect"
+              onClick={this.handleNewPerson}
             >
-              <p>{person.name}</p>
-            </Link>
-          ))}
-          <Button onClick={this.handleNewPerson}>Add new Person</Button>
+              Add new Person
+            </Button>
+          </Center>
         </div>
         <Footer />
       </div>
