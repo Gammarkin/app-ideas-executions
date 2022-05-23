@@ -8,7 +8,7 @@ import BorderRadius from './pages/BorderRadius';
 import Calculator from './pages/Calculator';
 import ChristmasLights from './pages/ChristmasLights';
 import CauseEffect from './pages/CauseEffect';
-
+import CauseEffectEspecifics from './pages/CauseEffectEspecifics';
 function App() {
   return (
     <div>
@@ -21,6 +21,11 @@ function App() {
       <Route exact path="/calculator" component={Calculator} />
       <Route exact path="/xmas-lights" component={ChristmasLights} />
       <Route exact path="/cause-effect" component={CauseEffect} />
+      <Route
+        exact
+        path="/cause-effect/especifics/:id"
+        component={CauseEffectEspecifics}
+      />
     </div>
   );
 }

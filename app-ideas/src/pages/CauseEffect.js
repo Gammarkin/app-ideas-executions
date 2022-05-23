@@ -2,24 +2,25 @@ import React, {Component} from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import {Link} from 'react-router-dom';
+import {v4 as uuidv4} from 'uuid';
 
-const fakeStarterPerson = [
-  {
-    name: '...',
-    street: '...',
-    city: '...',
-    state: '...',
-    country: '...',
-    telephone: '...',
-    birthday: '...',
-  },
-];
+const randomIdForFakeStarterPerson = uuidv4();
+const fakeStarterPerson = {
+  id: randomIdForFakeStarterPerson,
+  name: 'Juan Luna Fernandez',
+  street: 'Heart of the moon st.',
+  city: 'LoveCity',
+  state: 'HeartState',
+  country: 'LoveLand',
+  telephone: '80085-80085',
+  birthday: '04/20/1969',
+};
 
 export default class CauseEffect extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      persons: fakeStarterPerson,
+      persons: [fakeStarterPerson],
       person: [],
     };
   }
@@ -36,7 +37,7 @@ export default class CauseEffect extends Component {
         <Header text="Cause Effect" show={true} />
         <div>
           {persons.map((person) => (
-            <Link to={`/cause-effect/expecifics/${person.name}`}>
+            <Link key={uuidv4()} to={`/cause-effect/especifics/${person.id}`}>
               <p>{person.name}</p>
             </Link>
           ))}

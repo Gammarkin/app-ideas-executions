@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import {Link} from 'react-router-dom';
 
-export default class CauseEffectEspecifics extends Component {
+class CauseEffectEspecifics extends Component {
   render() {
-    const {persons} = this.props;
+    const {person = {}} = this.props;
     return (
       <div>
-        {persons.map((person) => (
+        <Header text={person.name} show={true} />
+        <div>
           <ul>
             <li>{person.name}</li>
             <li>{person.street}</li>
@@ -15,8 +19,14 @@ export default class CauseEffectEspecifics extends Component {
             <li>{person.telephone}</li>
             <li>{person.birthday}</li>
           </ul>
-        ))}
+        </div>
+        <Link to="/cause-effect">
+          <p>back to all persons</p>
+        </Link>
+        <Footer />
       </div>
     );
   }
 }
+
+export default CauseEffectEspecifics;
