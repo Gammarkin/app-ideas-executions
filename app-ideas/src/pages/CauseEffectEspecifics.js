@@ -4,6 +4,8 @@ import Footer from '../components/Footer';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {ModifyPerson} from '../actions';
+import {Button, TextInput, Center} from '@mantine/core';
+import '../styles/CauseEffectEspecifics.css';
 
 class CauseEffectEspecifics extends Component {
   constructor(props) {
@@ -51,63 +53,99 @@ class CauseEffectEspecifics extends Component {
     return (
       <div>
         <Header text={personFromState.name} show={true} />
-        <div>
-          <input
+        <div className="flexCauseEffectsExp">
+          <TextInput
+            className="textInputCauseEffect"
             onChange={this.handleChangePersonValue}
             name="name"
             value={personFromState.name}
+            placeholder="Your name"
+            label="Name"
+            radius="md"
+            size="md"
           />
 
-          <input
+          <TextInput
+            className="textInputCauseEffect"
             onChange={this.handleChangePersonValue}
             value={personFromState.street}
             name="street"
+            placeholder="Your street"
+            label="Street"
+            radius="md"
+            size="md"
           />
 
-          <input
+          <TextInput
+            className="textInputCauseEffect"
             onChange={this.handleChangePersonValue}
             name="city"
             value={personFromState.city}
+            placeholder="Your city"
+            label="City"
+            radius="md"
+            size="md"
           />
 
-          <input
+          <TextInput
+            className="textInputCauseEffect"
             onChange={this.handleChangePersonValue}
-            name="state"
             value={personFromState.state}
+            name="state"
+            placeholder="Your state"
+            label="State"
+            radius="md"
+            size="md"
           />
 
-          <input
+          <TextInput
+            className="textInputCauseEffect"
             onChange={this.handleChangePersonValue}
             value={personFromState.country}
             name="country"
+            placeholder="Your country"
+            label="Country"
+            radius="md"
+            size="md"
           />
 
-          <input
+          <TextInput
+            className="textInputCauseEffect"
             onChange={this.handleChangePersonValue}
             value={personFromState.telephone}
             name="telephone"
+            placeholder="Your telephone"
+            label="Telephone"
+            radius="md"
+            size="md"
           />
 
-          <input
+          <TextInput
+            variant="filled"
+            className="textInputCauseEffect"
             onChange={this.handleChangePersonValue}
             value={personFromState.birthday}
             name="birthday"
+            placeholder="Your birthday"
+            label="Birthday"
+            radius="md"
+            size="md"
           />
-
+        </div>
+        <Center style={{flexDirection: 'column'}}>
           <Link to="/cause-effect">
-            <button
+            <Button
+              className="buttonCauseEffect"
               type="button"
               onClick={this.handleDispatchChangedPersonData}
             >
               Modify this Person
-            </button>
+            </Button>
           </Link>
-
-          <Link to="/cause-effect">
+          <Link className="colorWhite" to="/cause-effect">
             <p>back to all persons</p>
           </Link>
-        </div>
-
+        </Center>
         <Footer />
       </div>
     );

@@ -1,0 +1,26 @@
+.textInputCauseEffect {
+  width: 13em;
+  margin: 20px;
+  color: white;
+}
+
+.buttonCauseEffect {
+  background-color: brown;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.buttonCauseEffect:hover {
+  background-color: rgb(100, 10, 10);
+}
+
+.flexCauseEffectsExp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.mantine-riils3 {
+  color: white;
+}
