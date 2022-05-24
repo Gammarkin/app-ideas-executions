@@ -8,22 +8,11 @@ import {sendNewPerson, sendNewPersonToObjPerson} from '../actions';
 import {Button, Group, Text, Center} from '@mantine/core';
 import '../styles/CauseEffect.css';
 
-const fakeStarterPerson = {
-  id: 0,
-  name: 'Juan Luna Fernandez',
-  street: 'Heart of the moon st.',
-  city: 'LoveCity',
-  state: 'HeartState',
-  country: 'LoveLand',
-  telephone: '80085-80085',
-  birthday: '04/20/1969',
-};
-
 class CauseEffect extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      persons: [fakeStarterPerson],
+      persons: [...props.persons],
     };
   }
 
