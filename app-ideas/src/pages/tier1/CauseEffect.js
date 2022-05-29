@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import {v4 as uuidv4} from 'uuid';
-import {sendNewPerson, sendNewPersonToObjPerson} from '../actions';
+import {sendNewPerson, sendNewPersonToObjPerson} from '../../redux/actions';
 import {Button, Group, Text, Center} from '@mantine/core';
-import '../styles/CauseEffect.css';
+import '../../styles/CauseEffect.css';
 
 class CauseEffect extends Component {
   constructor(props) {

@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
-import {ModifyPerson} from '../actions';
+import {ModifyPerson} from '../../redux/actions';
 import {Button, TextInput, Center} from '@mantine/core';
-import '../styles/CauseEffectEspecifics.css';
+import '../../styles/CauseEffectEspecifics.css';
 
 class CauseEffectEspecifics extends Component {
   constructor(props) {

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import '../styles/BorderRadius.css';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import '../../styles/BorderRadius.css';
 
 export default class BorderRadius extends Component {
   constructor(props) {

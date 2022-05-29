@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import '../styles/Christmas.css';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import '../../styles/Christmas.css';
 
 export default class ChristmasLights extends Component {
   constructor(props) {

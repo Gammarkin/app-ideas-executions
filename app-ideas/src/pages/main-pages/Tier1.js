@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 import {Link} from 'react-router-dom';
-import '../styles/Tier1.css';
+import '../../styles/Tier1.css';
 
 export default class Tier1 extends Component {
   render() {
@@ -32,6 +32,11 @@ export default class Tier1 extends Component {
           <Link to="/cause-effect">
             <h2 className="h2Tier1">
               5 - Cause Effect: Click list item to display item details
+            </h2>
+          </Link>
+          <Link to="/color-cycle">
+            <h2 className="h2Tier1">
+              6 - Color Cycle: Cycle a color value through incremental changes
             </h2>
           </Link>
         </div>
