@@ -27,7 +27,13 @@ class CauseEffectEspecifics extends Component {
     };
   }
 
-  handleChangePersonValue = ({target: {name, value}}) => {
+  handleChangePersonValue = (event) => {
+    event.preventDefault();
+
+    const {
+      target: {name, value},
+    } = event;
+
     const {personFromState} = this.state;
     this.setState({
       personFromState: {
