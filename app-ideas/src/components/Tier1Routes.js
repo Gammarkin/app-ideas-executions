@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 import Tier1 from '../pages/main-pages/Tier1';
 import Tier2 from '../pages/main-pages/Tier2';
 import Tier3 from '../pages/main-pages/Tier3';
@@ -16,23 +16,22 @@ export default class Tier1Routes extends Component {
   render() {
     return (
       <div>
-        <Switch>
-          <Route exact path="/app-ideas-executions/" component={Home} />
-          <Route exact path="/tier1" component={Tier1} />
-          <Route exact path="/tier2" component={Tier2} />
-          <Route exact path="/tier3" component={Tier3} />
-          <Route exact path="/bin2dec" component={Bin2Dec} />
-          <Route exact path="/borderRadious" component={BorderRadius} />
-          <Route exact path="/calculator" component={Calculator} />
-          <Route exact path="/xmas-lights" component={ChristmasLights} />
-          <Route exact path="/cause-effect" component={CauseEffect} />
+        <Routes>
+          <Route path="/app-ideas-executions/" element={<Home />} />
+          <Route path="/tier1" element={<Tier1 />} />
+          <Route path="/tier2" element={<Tier2 />} />
+          <Route path="/tier3" element={<Tier3 />} />
+          <Route path="/bin2dec" element={<Bin2Dec />} />
+          <Route path="/borderRadious" element={<BorderRadius />} />
+          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/xmas-lights" element={<ChristmasLights />} />
+          <Route path="/cause-effect" element={<CauseEffect />} />
           <Route
-            exact
             path="/cause-effect/especifics/:id"
-            component={CauseEffectEspecifics}
+            element={<CauseEffectEspecifics />}
           />
-          <Route exact path="/color-cycle" component={ColorCycle} />
-        </Switch>
+          <Route path="/color-cycle" element={<ColorCycle />} />
+        </Routes>
       </div>
     );
   }
