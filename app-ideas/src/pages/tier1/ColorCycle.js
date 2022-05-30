@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import {TextInput, Button} from '@mantine/core';
+import {TextInput, Button, Center} from '@mantine/core';
 
 export default class ColorCycle extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ export default class ColorCycle extends Component {
       printColor: '',
       clicked: false,
       error: false,
-      disabled: false,
+      disabled: true,
     };
   }
 
@@ -34,36 +34,35 @@ export default class ColorCycle extends Component {
         color: '',
         label: 'Chose another color for the cycle to loop for',
         error: false,
+        disabled: false,
       });
     } else {
       this.setState({error: true});
     }
   };
 
-  handleChangePrintColorState = () => {
-    const {allColors, clicked} = this.state;
+  handleChangePrintColorState = ({target: {name}}) => {
+    const {allColors, clicked, disabled} = this.state;
 
     let index = 0;
     const interval = setInterval(() => {
-      index += 1;
-      console.log(index);
+      if (allColors.length > 0 && !disabled) {
+        console.log(allColors[index]);
+        this.setState({printColor: allColors[index], error: false});
+        this.setState({disabled: false});
+        console.log('iniciado');
+        index += 1;
+
+        if (index >= allColors.length) {
+          clearInterval(interval);
+          this.setState({disabled: true});
+        }
+      } else {
+        this.setState({printColor: '#FAFAFA', error: true});
+      }
     }, 2500);
 
-    if (allColors.length > 0) {
-      console.log(allColors[index]);
-      this.setState({printColor: allColors[index], error: false});
-      this.setState({disabled: true});
-      console.log('iniciado');
-    } else {
-      this.setState({printColor: '#FAFAFA', error: true});
-    }
     this.setState({clicked: !clicked});
-
-    if (allColors.length - 1 === index) {
-      clearInterval(interval);
-      console.log('limpado');
-      this.setState({disabled: false});
-    }
   };
 
   render() {
@@ -73,6 +72,7 @@ export default class ColorCycle extends Component {
         <Header text="Color Cycle" show={true} />
         <form>
           <TextInput
+            style={{marginTop: '40px'}}
             onChange={this.handleInputChange}
             name="color"
             value={color}
@@ -81,16 +81,24 @@ export default class ColorCycle extends Component {
             radius="md"
             size="md"
           />
-          <Button type="button" onClick={this.handleAddColorToTheCycle}>
-            Add color to the cycle
-          </Button>
-          <Button
-            disabled={disabled}
-            type="button"
-            onClick={this.handleChangePrintColorState}
-          >
-            {clicked ? 'Stop' : 'Start'}
-          </Button>
+          <Center>
+            <Button
+              style={{marginLeft: '10px', marginTop: '10px'}}
+              type="button"
+              onClick={this.handleAddColorToTheCycle}
+            >
+              Add color to the cycle
+            </Button>
+            <Button
+              style={{marginLeft: '12px', marginTop: '12px'}}
+              disabled={disabled}
+              type="button"
+              onClick={this.handleChangePrintColorState}
+              name={clicked ? 'Stop' : 'Start'}
+            >
+              {clicked ? 'Stop' : 'Start'}
+            </Button>
+          </Center>
         </form>
         {clicked && (
           <div style={{border: `5px solid ${printColor}`}}>
