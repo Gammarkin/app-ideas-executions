@@ -39,6 +39,11 @@ export default class Tier1 extends Component {
               6 - Color Cycle: Cycle a color value through incremental changes
             </h2>
           </Link>
+          <Link to="/countdown-timer">
+            <h2 className="h2Tier1">
+              7 - Countdown Timer: Event Countdown timer{' '}
+            </h2>
+          </Link>
         </div>
         <Footer />
       </div>
