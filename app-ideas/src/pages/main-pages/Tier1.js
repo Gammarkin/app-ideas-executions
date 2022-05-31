@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import {Link} from 'react-router-dom';
-import '../../styles/Tier1.css';
+import '../../styles/main-styles/Tier1.css';
 
 export default class Tier1 extends Component {
   render() {

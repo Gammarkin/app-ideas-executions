@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import '../../styles/Tier3.css';
+import '../../styles/main-styles/Tier3.css';
 
 export default class Tier3 extends Component {
   render() {

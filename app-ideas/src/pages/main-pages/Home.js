@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import Header from '../../components/Header';
-import '../../styles/Home.css';
+import '../../styles/main-styles/Home.css';
 
 export default class Home extends Component {
   render() {

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import '../../styles/Bin2Dec.css';
+import '../../styles/tier1-styles/Bin2Dec.css';
 
 export default class Bin2Dec extends Component {
   constructor(props) {

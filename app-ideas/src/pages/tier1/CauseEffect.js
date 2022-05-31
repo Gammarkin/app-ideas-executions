@@ -6,7 +6,7 @@ import Footer from '../../components/Footer';
 import {v4 as uuidv4} from 'uuid';
 import {sendNewPerson, sendNewPersonToObjPerson} from '../../redux/actions';
 import {Button, Group, Text, Center} from '@mantine/core';
-import '../../styles/CauseEffect.css';
+import '../../styles/tier1-styles/CauseEffect.css';
 
 class CauseEffect extends Component {
   constructor(props) {

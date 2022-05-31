@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {ModifyPerson} from '../../redux/actions';
 import {Button, TextInput, Center} from '@mantine/core';
-import '../../styles/CauseEffectEspecifics.css';
+import '../../styles/tier1-styles/CauseEffectEspecifics.css';
 
 class CauseEffectEspecifics extends Component {
   constructor(props) {
