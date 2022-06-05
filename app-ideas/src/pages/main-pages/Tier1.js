@@ -41,7 +41,7 @@ export default class Tier1 extends Component {
           </Link>
           <Link to="/countdown-timer">
             <h2 className="h2Tier1">
-              7 - Countdown Timer: Event Countdown timer{' '}
+              7 - Countdown Timer: Event Countdown timer
             </h2>
           </Link>
         </div>

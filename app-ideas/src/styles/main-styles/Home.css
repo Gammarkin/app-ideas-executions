@@ -1,33 +1,33 @@
 .homeTierOne {
-  align-items: center;
+  align-items: stretch;
   color: rgb(85, 74, 74);
   display: flex;
   flex-direction: column;
   font-size: 30px;
   justify-content: center;
-  height: 28.3vh;
+  height: 29.5vh;
   background-color: rgb(192, 238, 148);
 }
 
 .homeTierTwo {
-  align-items: center;
+  align-items: stretch;
   color: rgb(36, 33, 33);
   display: flex;
   flex-direction: column;
   font-size: 30px;
   justify-content: center;
-  height: 28.3vh;
+  height: 29.5vh;
   background-color: rgb(247, 183, 65);
 }
 
 .homeTierThree {
-  align-items: center;
+  align-items: stretch;
   color: black;
   display: flex;
   flex-direction: column;
   font-size: 30px;
   justify-content: center;
-  height: 28.4vh;
+  height: 29.5vh;
   background-color: rgb(240, 74, 33);
 }
 
@@ -41,4 +41,22 @@
 
 .homeTierThree:hover {
   background-color: rgb(192, 17, 17);
+}
+
+.homeTierOne span {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.homeTierTwo span {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.homeTierThree span {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
 }

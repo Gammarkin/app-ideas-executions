@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import {Outlet} from 'react-router-dom';
 import {TextInput, Button, Center} from '@mantine/core';
 
 export default class ColorCycle extends Component {
@@ -128,6 +129,7 @@ export default class ColorCycle extends Component {
           </p>
         )}
         <Footer />
+        <Outlet />
       </div>
     );
   }

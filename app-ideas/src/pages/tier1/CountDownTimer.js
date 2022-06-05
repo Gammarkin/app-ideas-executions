@@ -21,7 +21,9 @@ export default class CountDownTimer extends Component {
             opened={showHiddenInfo}
             onClose={() => this.setState({showHiddenInfo: false})}
             target={
-              <Button onClick={() => this.setState({showHiddenInfo: true})}>
+              <Button 
+              onMouseLeave={()=> this.setState({showHiddenInfo: false})}
+               onMouseOver={() => this.setState({showHiddenInfo: true})}>
                 Details
               </Button>
             }
