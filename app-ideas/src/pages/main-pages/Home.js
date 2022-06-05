@@ -19,17 +19,18 @@ export default class Home extends Component {
             >
               <Link to="/tier1">
                 <div className="homeTierOne">
-                  <span> / Tier One Begginer / </span>
+                  <span> Tier One </span>
+                  <span> Begginer </span>
                 </div>
               </Link>
               <Link to="/tier2">
                 <div className="homeTierTwo">
-                  <span> / Tier Two Intermediate / </span>
+                  <span>Tier Two Intermediate</span>
                 </div>
               </Link>
               <Link to="/tier3">
                 <div className="homeTierThree">
-                  <span> / Tier Three Advanced / </span>
+                  <span>Tier Three Advanced</span>
                 </div>
               </Link>
             </Navbar>
