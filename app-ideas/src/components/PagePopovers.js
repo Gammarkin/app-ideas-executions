@@ -15,12 +15,12 @@ export default function PagePopovers() {
         opened={showHiddenInfo}
         onClose={() => setShowHiddenInfo(false)}
         target={
-          <Link name="first" style={styles.link} to="/countdown-timer">
+          <Link name="first" style={styles.link} to="/CSV2JSON">
             <span
               onMouseLeave={() => setShowHiddenInfo(false)}
               onMouseOver={() => setShowHiddenInfo(true)}
             >
-              Countdown Timer: Event Countdown timer
+              CSV2JSON: CSV to JSON converter
             </span>
           </Link>
         }
@@ -30,13 +30,9 @@ export default function PagePopovers() {
       >
         <div style={{display: 'flex'}}>
           <Text size="sm">
-            We all have important events we look forward to in life, birthdays,
-            anniversaries, and holidays to name a few. Wouldn't it be nice to
-            have an app that counts down the months, days, hours, minutes, and
-            seconds to an event? Countdown Timer is just that app! The objective
-            of Countdown Timer is to provide a continuously decrementing display
-            of the he months, days, hours, minutes, and seconds to a user
-            entered event.
+            In the JSON2CSV application you translated JSON to a comma separated
+            value (CSV) format. The objective of CSV2JSON is to reverse that
+            process by converting a block of CSV text to JSON.
           </Text>
         </div>
       </Popover>
@@ -50,7 +46,7 @@ export default function PagePopovers() {
               onMouseLeave={() => setShowSecondHidden(false)}
               onMouseOver={() => setShowSecondHidden(true)}
             >
-              Color Cycle Cycle a color value through incremental changes
+              Color Cycle: Cycle a color value through incremental changes
             </span>
           </Link>
         }
@@ -78,7 +74,7 @@ export default function PagePopovers() {
               onMouseLeave={() => setShowThirdHidden(false)}
               onMouseOver={() => setShowThirdHidden(true)}
             >
-              Cause Effect App Click list item to display item details{' '}
+              Cause Effect: App Click list item to display item details{' '}
             </span>
           </Link>
         }

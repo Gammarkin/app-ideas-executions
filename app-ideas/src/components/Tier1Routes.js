@@ -7,7 +7,7 @@ import ChristmasLights from '../pages/tier1/ChristmasLights';
 import CauseEffect from '../pages/tier1/CauseEffect';
 import CauseEffectEspecifics from '../pages/tier1/CauseEffectEspecifics';
 import ColorCycle from '../pages/tier1/ColorCycle';
-import CountDownTimer from '../pages/tier1/CountDownTimer';
+import CSV2JSON from '../pages/tier1/CSV2JSON';
 
 export default class Tier1Routes extends Component {
   render() {
@@ -24,7 +24,7 @@ export default class Tier1Routes extends Component {
             element={<CauseEffectEspecifics />}
           />
           <Route path="/color-cycle" element={<ColorCycle />} />
-          <Route path="/countdown-timer" element={<CountDownTimer />} />
+          <Route path="/csv2json" element={CSV2JSON} />
         </Routes>
       </div>
     );
