@@ -24,7 +24,7 @@ export default class Tier1Routes extends Component {
             element={<CauseEffectEspecifics />}
           />
           <Route path="/color-cycle" element={<ColorCycle />} />
-          <Route path="/csv2json" element={CSV2JSON} />
+          <Route path="/csv2json" element={<CSV2JSON />} />
         </Routes>
       </div>
     );
