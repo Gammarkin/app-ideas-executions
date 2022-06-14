@@ -42,6 +42,11 @@ export default class Tier1 extends Component {
           <Link to="/CSV2JSON">
             <h2 className="h2Tier1">7 - CSV2JSON: CSV to JSON converter</h2>
           </Link>
+          <Link to="/dolar-to-cents">
+            <h2 className="h2Tier1">
+              8 - Dollars to Cents: Convert dollars to cents
+            </h2>
+          </Link>
         </div>
         <Footer />
       </div>

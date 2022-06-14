@@ -12,6 +12,32 @@ export default function PagePopovers() {
     <div>
       <Popover
         style={styles.popOver}
+        opened={showforthHidden}
+        onClose={() => setShowforthHidden(false)}
+        target={
+          <Link style={styles.link} to="/dolar-to-cents">
+            <span
+              onMouseLeave={() => setShowforthHidden(false)}
+              onMouseOver={() => setShowforthHidden(true)}
+            >
+              Dollars To Cents: Convert dollars to cents
+            </span>
+          </Link>
+        }
+        width={260}
+        position="bottom"
+        withArrow
+      >
+        <div style={{display: 'flex'}}>
+          <Text size="sm">
+            convert into coins with the sub-type of dollars: penny, nickel, dime
+            and quarter. Use an algorithm that would divide the dollar value to
+            the four coin types, and output few coins as possible.
+          </Text>
+        </div>
+      </Popover>
+      <Popover
+        style={styles.popOver}
         opened={showHiddenInfo}
         onClose={() => setShowHiddenInfo(false)}
         target={
@@ -89,34 +115,6 @@ export default function PagePopovers() {
             icons) that describes or categorizes a set of data. When a list item
             is clicked, the detailed data behind it is displayed in an adjacent
             pane on the page.
-          </Text>
-        </div>
-      </Popover>
-      <Popover
-        style={styles.popOver}
-        opened={showforthHidden}
-        onClose={() => setShowforthHidden(false)}
-        target={
-          <Link style={styles.link} to="/xmas-lights">
-            <span
-              onMouseLeave={() => setShowforthHidden(false)}
-              onMouseOver={() => setShowforthHidden(true)}
-            >
-              Christmas Lights Simulate a string of Christmas lights
-            </span>
-          </Link>
-        }
-        width={260}
-        position="bottom"
-        withArrow
-      >
-        <div style={{display: 'flex'}}>
-          <Text size="sm">
-            The ChristmasLights application relies on your development talents
-            to create a mesmerizing light display. Your task is to draw seven
-            colored circles in a row and based on a timer change the intensity
-            of each circle. When a circle is brightened it's predecessor returns
-            to its normal intensity.
           </Text>
         </div>
       </Popover>
