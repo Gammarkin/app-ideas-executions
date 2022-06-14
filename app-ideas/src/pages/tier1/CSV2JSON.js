@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import {Textarea, Button, Center} from '@mantine/core';
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import '../../styles/tier1-styles/CSV2JSON.css';
 
 export default function CSV2JSON() {
@@ -41,6 +43,7 @@ export default function CSV2JSON() {
 
   return (
     <div>
+      <Header text='CSV converter to JSON' show={true} />
       <Center>
         <Textarea
           onChange={({target: {value}}) => setTextAreaValue(value)}
@@ -72,6 +75,7 @@ export default function CSV2JSON() {
           Copy Result
         </Button>
       </Center>
+      <Footer />
     </div>
   );
 }
