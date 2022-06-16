@@ -47,6 +47,11 @@ export default class Tier1 extends Component {
               8 - Dollars to Cents: Convert dollars to cents
             </h2>
           </Link>
+          <Link to="/gh-status">
+            <h2 className="h2Tier1">
+              9 - GitHub Status: See the atual GitHub status
+            </h2>
+          </Link>
         </div>
         <Footer />
       </div>

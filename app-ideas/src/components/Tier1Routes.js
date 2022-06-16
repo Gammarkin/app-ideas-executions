@@ -9,6 +9,7 @@ import CauseEffectEspecifics from '../pages/tier1/CauseEffectEspecifics';
 import ColorCycle from '../pages/tier1/ColorCycle';
 import CSV2JSON from '../pages/tier1/CSV2JSON';
 import DolarToCents from '../pages/tier1/DolarToCents';
+import GithubStatus from '../pages/tier1/GithubStatus';
 
 export default class Tier1Routes extends Component {
   render() {
@@ -27,6 +28,7 @@ export default class Tier1Routes extends Component {
           <Route path="/color-cycle" element={<ColorCycle />} />
           <Route path="/csv2json" element={<CSV2JSON />} />
           <Route path="/dolar-to-cents" element={<DolarToCents />} />
+          <Route path="/gh-status" element={<GithubStatus />} />
         </Routes>
       </div>
     );
