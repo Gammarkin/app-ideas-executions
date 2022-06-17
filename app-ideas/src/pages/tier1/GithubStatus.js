@@ -27,6 +27,20 @@ export default function GithubStatus() {
     <div>
       <Header text="GitHub Status" show={true} />
       <div style={style.status__box}>
+        {scrapeResult === 200 && (
+          <div
+            style={{
+              backgroundColor: 'green',
+              display: 'flex',
+              alignItems: 'center',
+            }}
+          >
+            <p style={{color: 'white', marginLeft: '20px'}}>
+              {' '}
+              All good here, folks!
+            </p>
+          </div>
+        )}
         <section style={style.status__section}>
           <div style={style.status__box}>
             <p>Git Operations</p>
